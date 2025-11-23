@@ -1,0 +1,207 @@
+body {
+  background-image: url("../images/postazione.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 1000px;
+  opacity: 95%;
+  overflow-x: hidden;
+}
+
+header{
+    height: 150px;
+    opacity: 95%;
+    
+}
+
+.sfondo{
+    height: 100%;
+}
+
+
+.logo{
+  height: 120px;
+  margin-top: 10px;
+
+}
+
+.title{
+    font-family: cursive;
+}
+
+.tornaPrenotazioniButton,.logoutButton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #020403;
+    background:transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    left:50px;
+    overflow: hidden;
+    float: right;
+
+}
+
+span{
+    background: #020403;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+
+.leMiePrenotazioni{
+  height: 600px;
+}
+#select {
+    width: 1000px;
+    border-collapse: collapse;
+    position:relative;
+    top:50px;
+    left:150px;
+   
+  }
+  #select th{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+  }
+  .attributi {
+    font-weight: 700;
+    color: #fff;
+    background: black;
+  }
+
+  .white{
+    background: white;
+  }
+
+  .prenotazioniDiv {
+    width: 1000px;
+    height: 60px;
+    position: relative;
+    left: 150px;
+    top:50px;
+    padding: 10px;
+    background:linear-gradient(black,white);
+    border: 1px solid #d7d7d7;
+
+  }
+
+.prenotazioniButton{
+    width: 200px;
+    height: 40px;
+    float: right;
+  }
+
+
+  footer{
+    height: 300px;
+    background-color: black;
+    padding: 30px;
+    margin-top:50px;
+}
+
+footer a:hover{
+	opacity: 70%;
+}
+
+.linkRapidi{
+  position: relative; 
+  left:80px;
+}
+
+.social{
+  margin-left: -40px
+}
+.mail, .mail_img{
+    display: inline-block;
+  }
+  
+  .instagram, .insta_img{
+    display: inline-block;
+  }
+
+.linkVia{
+  position:relative;
+  top:20px;
+  right:30px;
+  text-align: center;
+}
+
+
+@media screen and (max-width:1000px){
+
+  body{
+    height: 1600px;
+  }
+
+.tornaPrenotazioniButton,.logoutButton{
+  width: 150px;
+  position: relative;
+  top:-130px;
+  left:320px;
+}
+
+#select {
+  width: 10px;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  left: -50px;
+  top: 70px;
+}
+
+#select th{
+  padding: 13px;
+}
+
+.prenotazioniDiv {
+  width: 700px;
+  position: relative;
+  left: 0px;
+  top:70px;
+}
+
+footer{
+    position:relative;
+    top:200px;
+    height: 600px;
+    width: 720px;
+}
+
+.linkRapidi{
+  margin-left: 170px;
+  margin-bottom:30px;
+  width:200px;
+}
+
+.mail, .mail_img{
+    display: inline-block;
+  }
+  
+  .instagram, .insta_img{
+    display: inline-block;
+  }
+
+.linkVia{
+  left:10px;
+  margin-bottom: 30px;
+}
+}

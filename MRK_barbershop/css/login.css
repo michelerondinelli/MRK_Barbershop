@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    background: url(../images/sfondo4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url("../images/taglio1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+img{
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+}
+.submit:hover{
+    background: #020403;
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.homeImg{
+    height:40px;
+    width:40px;
+    position: relative;
+    left:150px;
+    top:60px
+}
+@media screen and (max-width: 600px){
+
+    .side-image{
+        border-radius: 10px 10px 0 0;
+        height: 280px;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        height: 700px;
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .homeImg{
+        top: 20px;
+        left: 125px;
+    }
+}
+
+
+body {
+    background-image: url("../images/postazione.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    opacity: 95%;
+    overflow-x: hidden;
+    
+  }
+  
+  header{
+    height: 80px;
+  }
+  
+  .logoutButton,.gestisciButtonMobile{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #020403;
+    background:white;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+    overflow: hidden;
+    color: black;
+  }
+  
+  .gestisciButtonMobile{
+    display: none;
+  }
+  
+  .tabella{
+    position: relative;
+    top:150px;
+  }
+  /* (B) SELECT APPOINTMENT DATE/SLOT */
+  #select {
+    width: 100px;
+    border-collapse: collapse;
+    margin: 50px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 100px;
+  }
+  #select th, #select td {
+    text-align: center;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #d7d7d7;
+  }
+  #select th {
+    font-weight: 700px;
+    color: #fff;
+    background: #2460ab;
+  }
+  #select td { background: #fff; }
+  
+  #select td:hover{
+    background-color: green;
+  }
+  #select td.booked {
+    color: #180909;
+    background: #e61010;
+  }
+  #select td.selected { background-color: green; }
+  
+  /* (C) CONFIRMATION FORM */
+  .form {
+    width: 1215px;
+    position: relative;
+    left: 163px;
+    padding: 10px;
+    background: #2460ab;
+    border: 1px solid #d7d7d7;
+  }
+  
+  #confirm input[type=text], #confirm input[type=varchar]{
+    width: 150px;
+    padding: 10px;
+    margin-left: 50px;
+    border: 0;
+  }
+  #confirm input[type=text]:focus {
+    outline-width: 0;
+  }
+  #confirm input[type=submit],.gestisciButton{
+    padding: 10px 20px;
+    margin-left: 50px;
+    border: 0;
+    color: #fff;
+    background: #9d9d9d;
+    cursor: pointer;
+  }
+  #confirm input[type=submit]:disabled { background: #9d9d9d; }
+  
+  
+  @media screen and (max-width:1000px){
+  
+    body{
+      height: 3200px;
+    }
+  
+  .logoutButton{
+    position: relative;
+    left: 650px;
+    top: 395px;
+  }
+  
+  .gestisciButtonMobile{
+    display: inline;
+    position: relative;
+    left: 400px;
+    top:300px;
+  }
+  
+  .gestisciButton{
+    display: none;
+  }
+  
+  #select {
+    width: 100px;
+    border-collapse: collapse;
+    margin: 50px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 20px;
+    top: 470px;
+  }
+  
+  .form {
+    width: 892px;
+    position: relative;
+    left: 80px;
+    top:470px;
+  }
+  
+  #select th, #select td {
+    padding: 7px;
+  }
+  }

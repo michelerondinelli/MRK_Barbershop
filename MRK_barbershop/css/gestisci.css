@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/postazione.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    opacity: 95%;
+  }
+
+  header{
+    height: 40px;
+  }
+
+  .logo{
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  
+  .logoutButton,.tornaPrenotazioniButton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #020403;
+    background:white;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+    overflow: hidden;
+    color: black;
+    margin-right: 30px ;
+  }
+
+.prenotaButton{
+    padding: 10px 20px;
+    margin-left: 50px;
+    border: 0;
+    color: #fff;
+    background: #9d9d9d;
+    cursor: pointer;
+}
+
+#select {
+width: 1000px;
+border-collapse: collapse;
+position:relative;
+left:230px;
+top:100px;
+}
+
+#select th{
+text-align: center;
+padding: 20px;
+border: 1px solid #d7d7d7;
+}
+
+.attributi {
+font-weight: 700;
+color: #fff;
+background: #2460ab;
+}
+
+.white{
+background: white;
+}
+
+.prenotazioniDiv {
+    width: 1000px;
+    height: 60px;
+    position: relative;
+    left: 230px;
+    top:100px;
+    padding: 10px;
+    background: #2460ab;
+    border: 1px solid #d7d7d7;
+  }
+
+.prenotazioniButton{
+    width: 200px;
+    height: 40px;
+    float: right;
+  }
+
+footer{
+    height: 200px;
+}
+
+
+@media screen and (max-width:1000px){
+
+  body{
+    height: 2100px;
+  }
+
+.logoutButton{
+  position: relative;
+  left: 520px;
+  top: -120px;
+}
+
+.tornaPrenotazioniButton{
+  position: relative;
+  left: 280px;
+  top: -215px;
+}
+
+#select {
+  width: 100px;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  left:-30px;
+  top: 470px;
+}
+
+.prenotazioniDiv {
+  width: 912px;
+  position: relative;
+  left: 20px;
+  top:470px;
+}
+
+#select th, #select td {
+  padding: 20px;
+}
+}

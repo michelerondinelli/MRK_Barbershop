@@ -1,0 +1,161 @@
+
+
+body {
+  background-image: url("../images/postazione.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+  opacity: 95%;
+  overflow-x: hidden;
+  
+}
+
+header{
+  height: 80px;
+}
+
+.logo{
+  height: 120px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.logoutButton,.gestisciButtonMobile{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #020403;
+  background:white;
+  color:#fff;
+  cursor: pointer;
+  float:right;
+  overflow: hidden;
+  color: black;
+}
+
+.gestisciButtonMobile{
+  display: none;
+}
+
+.tabella{
+  position: relative;
+  top:150px;
+}
+/* (B) SELECT APPOINTMENT DATE/SLOT */
+#select {
+  width: 100px;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  left: 100px;
+}
+#select th, #select td {
+  text-align: center;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid #d7d7d7;
+}
+#select th {
+  font-weight: 700px;
+  color: #fff;
+  background: #2460ab;
+}
+#select td { background: #fff; }
+
+#select td:hover{
+  background-color: green;
+}
+#select td.booked {
+  color: #180909;
+  background: #e61010;
+}
+#select td.selected { background-color: green; }
+
+/* (C) CONFIRMATION FORM */
+.form {
+  width: 1215px;
+  position: relative;
+  left: 163px;
+  padding: 10px;
+  background: #2460ab;
+  border: 1px solid #d7d7d7;
+}
+
+#confirm input[type=text], #confirm input[type=varchar]{
+  width: 150px;
+  padding: 10px;
+  margin-left: 50px;
+  border: 0;
+}
+#confirm input[type=text]:focus {
+  outline-width: 0;
+}
+#confirm input[type=submit],.gestisciButton{
+  padding: 10px 20px;
+  margin-left: 50px;
+  border: 0;
+  color: #fff;
+  background: #9d9d9d;
+  cursor: pointer;
+}
+#confirm input[type=submit]:disabled { background: #9d9d9d; }
+
+
+@media screen and (max-width:1000px){
+
+  body{
+    height: 1700px;
+  }
+
+.logoutButton{
+  position: relative;
+  left: 380px;
+  top: -115px;
+}
+
+.gestisciButtonMobile{
+  display: inline;
+  position: relative;
+  left: 100px;
+  top:-210px;
+}
+
+.gestisciButton{
+  display: none;
+}
+
+#select {
+  width: 10px;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  left: -50px;
+  top: 170px;
+}
+
+.form {
+  width: 785px;
+  height: 70px;
+  position: relative;
+  left: 10px;
+  top:170px;
+}
+
+.prenotaInput{
+  position: relative;
+  float: right;
+  top: -45px;
+}
+#select th, #select td {
+  padding: 8px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+}

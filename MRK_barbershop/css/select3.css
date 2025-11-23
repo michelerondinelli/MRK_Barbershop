@@ -1,0 +1,210 @@
+
+
+body {
+  background-image: url("../images/postazione.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+  opacity: 95%;
+}
+
+header{
+    height: 100px;
+    opacity: 95%;
+}
+
+.logo{
+  height: 120px;
+  margin-top: 10px;
+
+}
+
+.title{
+    font-family: cursive;
+}
+
+.LeMiePrenotazioniButton,.logoutButton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #020403;
+    background:transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    left:600px;
+    overflow: hidden;
+}
+
+span{
+    background: #020403;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+
+  /* (B) SELECT APPOINTMENT DATE/SLOT */
+  #select {
+    width: 100px;
+    border-collapse: collapse;
+    margin: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 100px;
+    left: 250px;
+  }
+  #select th, #select td {
+    text-align: center;
+    padding: 7px;
+    border: 1px solid #d7d7d7;
+  }
+  #select th {
+    font-weight: 700;
+    color: #fff;
+    background:black;
+  }
+  #select td { background: #fff; }
+
+  #select td:hover{
+    background-color: green;
+  }
+  #select td.booked {
+    color: #180909;
+    background: #e61010;
+  }
+  #select td.selected { background-color: green; }
+  
+  /* (C) CONFIRMATION FORM */
+  #confirm {
+    width: 892px;
+    position: relative;
+    left: 301px;
+    padding: 10px;
+    background: linear-gradient(black,white);
+    margin-bottom: 100px;
+    border: 1px solid #d7d7d7;
+  }
+  #confirm input[type=text] {
+    padding: 10px;
+    margin-left: 50px;
+    border: 0;
+  }
+  #confirm input[type=text]:focus {
+    outline-width: 0;
+  }
+  #confirm input[type=submit] {
+    padding: 10px 20px;
+    margin-left: 50px;
+    border: 0;
+    color: #fff;
+    background: #9d9d9d;
+    cursor: pointer;
+  }
+  #confirm input[type=submit]:disabled { background: #9d9d9d; }
+
+  footer{
+    height: 300px;
+    background-color: black;
+    padding: 30px;
+}
+
+footer a:hover{
+	opacity: 70%;
+}
+
+.linkRapidi{
+  position: relative; 
+  left:80px;
+}
+
+.social{
+  margin-left: -40px
+}
+.mail, .mail_img{
+    display: inline-block;
+  }
+  
+  .instagram, .insta_img{
+    display: inline-block;
+  }
+
+.linkVia{
+  color:white;
+  position:relative;
+  top:20px;
+  right:30px
+}
+
+@media screen and (max-width:1000px){
+
+  body{
+    height: 1520px;
+  }
+.buttonDiv{
+  position: relative;
+  right: 450px;
+}
+.LeMiePrenotazioniButton,.logoutButton{
+  width: 200px;
+}
+
+#select {
+  width: 900px;
+  border-collapse: collapse;
+  margin: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  left: -15px;
+  top: 170px;
+}
+
+#confirm {
+  width: 897px;
+  position: relative;
+  left: 37px;
+  top:170px;
+}
+
+footer{
+  position:relative;
+  top:500px;
+  height: 700px;
+}
+
+.footer{
+  position: relative;
+  top:100px;
+}
+
+.linkRapidi{
+  left:20px;
+}
+
+.mail, .mail_img{
+    display: inline-block;
+  }
+  
+  .instagram, .insta_img{
+    display: inline-block;
+  }
+
+.linkVia{
+  left:30px;
+  
+}
+}

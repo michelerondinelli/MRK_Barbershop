@@ -1,0 +1,271 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url("../images/postazione.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    opacity: 95%;
+}
+
+.sfondo{
+    height: 100%;
+}
+
+
+.logo{
+    height: 120px;
+    margin-top: 10px;
+}
+
+.title{
+    font-family: cursive;
+}
+
+.loginButton,.registerButton,.prenotaButton,.posizioneButton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #020403;
+    background:transparent;
+    color:#fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.loginButton,.registerButton{
+    float: right;
+    left:50px;
+}
+span{
+    background: #020403;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+
+.PrenotaDiv{
+    width: 400px;
+    position: relative;
+    top: 180px;
+    left:450px;
+}
+
+.PrenotaDiv h2{
+    color:bisque;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.INostriServizi{
+    height: 500px;
+    background-color: bisque;
+    border: 2px solid grey;
+}
+
+.barba,.baffi,.forbici{
+    position: relative;
+    left: 180px;
+    top:40px;
+    text-align: center;
+}
+
+.INostriServizi img{
+    height: 100px;
+}
+
+.DoveSiamo{
+    height: 800px;
+    background-image: url("../images/luogo\ barbiere.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    opacity: 95%;
+}
+
+.iframe{
+    position: relative;
+    top:200px;
+}
+
+
+.indirizzo h3, .indirizzo h5{
+    position: relative;
+    top:250px;
+    left:270px;
+    width: 400px;
+}
+
+.posizioneButton{
+    position: relative;
+    top:250px;
+    left: 350px;
+}
+
+footer{
+    height: 300px;
+    background-color: black;
+    padding: 30px;
+}
+
+footer a:hover{
+	opacity: 70%;
+}
+
+.mail, .mail_img{
+    display: inline-block;
+  }
+  
+  .instagram, .insta_img{
+    display: inline-block;
+    position: relative;
+    right: 60px;
+  }
+
+.linkVia{
+    position: relative;
+    top:30px;
+    color: white;
+}
+
+.linkVia:hover{
+    color: white;
+}
+
+
+  @media screen and (max-width: 600px){
+
+    body{
+        width: 400px;
+    }
+    
+    header{
+        height:700px;
+    }
+    .logo{
+        height: 80px;
+        margin-top: 30px;
+    }
+
+    .loginButton,.registerButton,.prenotaButton,.posizioneButton{
+        width: 120px;
+    }
+
+    .registerButton,.loginButton{
+        position: relative;
+        top:-100px;
+        margin-right: 40px;
+        color: #020403;
+    }
+    
+    .PrenotaDiv{
+        position: relative;
+        top: 180px;
+        left: -10px;
+    }
+    
+    
+    .INostriServizi{
+        height: 900px;
+        background-color: bisque;
+        border: 2px solid grey;
+        width: 100%;
+    }
+
+    .barba,.baffi,.forbici{
+        position: relative;
+        left:-10px;
+    }
+
+    .barba{
+        position: relative;
+        top:150px;
+    }
+
+    .baffi{
+        position: relative;
+        top:250px;
+    }
+
+    .INostriServizi img{
+        height: 60px;
+    }
+    
+    .DoveSiamoDiv{
+        border: 2px solid grey;
+    }
+
+    .DoveSiamo{
+        height: 600px;
+        width: 410px;
+    }
+  
+    .maps{
+        display: none;
+    }
+    
+    .indirizzo{
+        position: relative;
+        top: 120px;
+        left:10px;
+    }
+    
+    .indirizzo h3, .indirizzo h5{
+        position: relative;
+        top:20px;
+        left:-10px;
+        width: 400px;
+    }
+    
+    .posizioneButton{
+        position: relative;
+        top:20px;
+        left: 120px;
+    }
+    
+    footer{
+        height: 500px;
+        background-color: black;
+        padding:10px;
+    }
+    
+    footer a:hover{
+        opacity: 70%;
+    }
+    
+    .mail, .mail_img{
+        display: inline-block;
+      }
+      
+      .instagram, .insta_img{
+        display: inline-block;
+      }
+
+
+    footer hr{
+        position: relative;
+        top:30px;
+    }
+    
+  }
