@@ -27,7 +27,7 @@
   <?php
     
     require "dbhandler.php";
-    
+    session_start();
     if (!isset($_SESSION['user_id']))  header("Location: login.html");
     $email = $_SESSION['user_id'];
     $nome = $_SESSION['name'];
@@ -124,4 +124,5 @@
    </div>
   </footer>
  </body>       
+
 </HTML>
