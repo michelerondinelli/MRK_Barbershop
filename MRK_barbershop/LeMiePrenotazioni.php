@@ -27,11 +27,13 @@
   <?php
     
     require "dbhandler.php";
-    session_start();
+    
+    if (!isset($_SESSION['user_id']))  header("Location: login.html");
     $email = $_SESSION['user_id'];
     $nome = $_SESSION['name'];
     $cognome = $_SESSION['surname'];
-
+    
+  
  
     ?>
  
@@ -49,7 +51,7 @@
       </tr>
       <?php
 
-       $sql = "SELECT * FROM Appointments WHERE email = '$email'";
+      $sql = "SELECT * FROM Appointments WHERE email = '$email'";
       $result = mysqli_query($conn, $sql);
       $i = 1;
       $y = 0;
