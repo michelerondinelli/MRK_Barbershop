@@ -30,7 +30,7 @@
     $inizio = strtotime("+".APPO_MIN." day");
     $fine = strtotime("+".APPO_MAX." day");
     $prenotato = $_APPO->get(date("Y-m-d", $inizio), date("Y-m-d", $fine));
-    $email = $_SESSION['user_id'];
+    if (isset($_SESSION['user_id'])) $email = $_SESSION['user_id'];
     ?>
   
  
@@ -62,7 +62,7 @@
 
     <!-- Creo il form di conferma -->
     <form id="confirm" method="post" action="prenotazioni.php" style="bottom:10px">
-      <input type="hidden" name="email" value="<?php echo $email; ?>">
+      <input type="hidden" name="email" value="<?php if (isset($_SESSION['user_id'])) echo $email; ?>">
       <input type="text" id="cdate" name="date" readonly placeholder="Seleziona un orario da prenotare">
       <input type="text" id="cslot" name="slot" readonly>
       <input type="submit" id="cgo" value="Prenota" disabled>
